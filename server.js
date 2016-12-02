@@ -16,12 +16,13 @@ var output = function(req, res) {
   protocol = req.protocol;
   secure = req.secure;
 
-  out += req_method + " " + path + " " + protocol + "</br>";
+  // out += req_method + " " + path + " " + protocol + "</br>";
+  out += req_method + "</br>";
   out += header_string + "</br>";
-  out += "Body: " + body + "</br>";
-  out += "Params: " + params + "</br>";
-  out += "Cookies: " + cookies + "</br>";
-  out += "Secure: " + secure;
+  // out += "Body: " + body + "</br>";
+  // out += "Params: " + params + "</br>";
+  // out += "Cookies: " + cookies + "</br>";
+  // out += "Secure: " + secure;
 
   console.log(header_string);
   console.log(req_ip);
